@@ -1,0 +1,6 @@
+# dependencies
+/tmp
+vendor/**/*
+
+# misc
+*.tmp

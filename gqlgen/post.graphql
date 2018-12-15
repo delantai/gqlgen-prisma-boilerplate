@@ -1,0 +1,34 @@
+type Post {
+  author: User!
+  content: String!
+  createdAt: DateTime!
+  id: ID!
+  isPublished: Boolean!
+  title: String!
+}
+
+input CreatePostInput {
+  title: String!
+  content: String!
+  authorID: String!
+}
+
+type PostPayload {
+  post: Post
+}
+
+input PostActionInput {
+  id: ID!
+}
+
+extend type Query {
+  feed: [Post!]!
+  drafts: [Post!]!
+  post(id: ID!): Post
+}
+
+extend type Mutation {
+  createPost(input: CreatePostInput!): PostPayload!
+  deletePost(input: PostActionInput!): PostPayload!
+  publishPost(input: PostActionInput!): PostPayload!
+}
