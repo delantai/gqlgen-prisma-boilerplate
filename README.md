@@ -1,6 +1,6 @@
-# grVvy: Core
+# [Gqlgen + Prisma] Boilerplate
 
-This is the Grvvy Core Repo, a serverless, yoga-graphql backend.
+Boilerplate to get you started with Gqlgen and prisma.
 
 ## Quickstart
 
@@ -12,11 +12,13 @@ brew install prisma
 
 <Details>
 <Summary><b>Alternative</b>: Install with NPM or Yarn</Summary>
+
 ```
 npm install -g prisma
 # or
 yarn global add prisma
 ```
+</Details>
 
 #### 2. Connect Prisma to a database
 Run the following command to setup Prisma
